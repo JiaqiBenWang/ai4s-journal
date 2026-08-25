@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" width="240" height="80">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C8956C"/>
+      <stop offset="50%" stop-color="#D4A97A"/>
+      <stop offset="100%" stop-color="#C8956C"/>
+    </linearGradient>
+    <linearGradient id="wordGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C8956C"/>
+      <stop offset="45%" stop-color="#D4A97A"/>
+      <stop offset="100%" stop-color="#F5F0EB"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Icon: molecular motif + flask -->
+  <g transform="translate(40,40)">
+    <!-- Outer hex ring -->
+    <g opacity="0.12">
+      <polygon points="0,-26 22.5,-13 22.5,13 0,26 -22.5,13 -22.5,-13" fill="none" stroke="#C8956C" stroke-width="1.5"/>
+    </g>
+    <!-- Inner hex ring -->
+    <g opacity="0.1">
+      <polygon points="0,-17 14.7,-8.5 14.7,8.5 0,17 -14.7,8.5 -14.7,-8.5" fill="none" stroke="#C8956C" stroke-width="1"/>
+    </g>
+
+    <!-- Connections -->
+    <g opacity="0.3">
+      <line x1="0" y1="-4" x2="0" y2="-12" stroke="#C8956C" stroke-width="0.8"/>
+      <line x1="3.5" y1="-2" x2="10" y2="-5.5" stroke="#C8956C" stroke-width="0.8"/>
+      <line x1="3.5" y1="2" x2="10" y2="5.5" stroke="#C8956C" stroke-width="0.8"/>
+      <line x1="0" y1="4" x2="0" y2="12" stroke="#C8956C" stroke-width="0.8"/>
+      <line x1="-3.5" y1="2" x2="-10" y2="5.5" stroke="#C8956C" stroke-width="0.8"/>
+      <line x1="-3.5" y1="-2" x2="-10" y2="-5.5" stroke="#C8956C" stroke-width="0.8"/>
+    </g>
+
+    <!-- Nodes -->
+    <circle cx="0" cy="0" r="3.5" fill="url(#gold)" filter="url(#glow)"/>
+    <circle cx="0" cy="-15" r="2" fill="#D4A97A" opacity="0.6"/>
+    <circle cx="13" cy="-7.5" r="2" fill="#D4A97A" opacity="0.6"/>
+    <circle cx="13" cy="7.5" r="2" fill="#D4A97A" opacity="0.6"/>
+    <circle cx="0" cy="15" r="2" fill="#D4A97A" opacity="0.6"/>
+    <circle cx="-13" cy="7.5" r="2" fill="#D4A97A" opacity="0.6"/>
+    <circle cx="-13" cy="-7.5" r="2" fill="#D4A97A" opacity="0.6"/>
+
+    <!-- Flask overlay -->
+    <g opacity="0.5">
+      <path d="M-3,-11 L-3,3 L-10,14 L-10,19 L10,19 L10,14 L3,3 L3,-11" fill="none" stroke="#D4A97A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <!-- AI4S — single text element with gradient -->
+  <text x="78" y="49" font-family="'Georgia', 'Playfair Display', serif" font-weight="bold" font-size="38" fill="url(#wordGrad)" letter-spacing="-0.5">
+    AI4S
+  </text>
+
+  <!-- Subtitle -->
+  <text x="110" y="68" font-family="'Inter', system-ui, sans-serif" font-weight="500" font-size="9" letter-spacing="3" fill="#B8A99A" text-anchor="middle">
+    AI FOR SCIENCE
+  </text>
+</svg>

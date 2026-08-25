@@ -1,0 +1,64 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{amsmath,graphicx,hyperref,natbib,booktabs,caption,xcolor}
+\definecolor{ai4sgreen}{HTML}{0D3B2E}
+\definecolor{ai4sgold}{HTML}{C8956C}
+
+\title{\textbf{\textcolor{ai4sgold}{AI4S-Journal} Dataset \& Benchmark}}
+\author{Author Name\textsuperscript{1*}, Co-Author\textsuperscript{2} \
+\textsuperscript{1}Department, Institution, City, Country \
+\textsuperscript{2}Department, Institution, City, Country \
+\textsuperscript{*}Email: email@institution.edu}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Describe the new dataset or benchmark, its size, domain, intended use, and
+how it advances the field over existing resources.
+\end{abstract}
+\noindent\textbf{Keywords:} dataset, benchmark, evaluation, [domain]
+
+\section{Introduction}
+Motivate the need. Review existing resources and their limitations.
+
+\section{Dataset Description}
+\subsection{Data Collection}
+How was the data collected/generated? Include ethical considerations.
+\subsection{Data Composition}
+Size, format, splits (train/val/test), and class distribution.
+
+\begin{table}[h]
+\centering
+\caption{Dataset Statistics}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Split & Samples & Classes & Avg. Length \
+\midrule
+Training   & 100,000 & 50 & 256 \
+Validation &  10,000 & 50 & 256 \
+Test       &  10,000 & 50 & 256 \
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Data Preprocessing}
+Document all preprocessing and augmentation steps.
+
+\section{Benchmark Protocol}
+\subsection{Task Definition}
+\subsection{Evaluation Metrics}
+\subsection{Baseline Methods}
+
+\section{Baseline Results}
+\section{Discussion and Limitations}
+\section{Conclusion}
+\section*{Data Availability}
+Provide download link and license (CC BY 4.0 recommended).
+
+\bibliographystyle{unsrt}
+\begin{thebibliography}{99}
+\bibitem{d1} Author, A. (Year). \textit{Title}. Journal.
+\end{thebibliography}
+\end{document}
